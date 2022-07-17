@@ -1,2 +1,3 @@
 # mileStoneProject-1-ramos
-anything 
+
+My inspiration behind this game was the nostalgia for newly vintage video games from the two thousands. I wanted a simple approach with questions that helped remind people of some of the best and iconic moments in gameplay. My design was inspired by the dark moody nights spent playing these games and also the clean UI and UX design we’ve been learning about. I love coding so I was excited to give a personal touch to this project. 
