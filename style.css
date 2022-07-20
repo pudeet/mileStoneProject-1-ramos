@@ -3,7 +3,7 @@
     font-family: Franklin Gothic Medium;
 }
 :root {
-    --hue-neutral: 280;
+    --hue-neutral: 262;
     --hue-wrong: 0;
     --hue-correct: 145; 
 }
@@ -16,7 +16,18 @@ body {
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%)
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+img {
+    border: black solid 1px;
+    border-radius: 50px;
 }
 
 body.correct {
@@ -29,7 +40,7 @@ body.wrong {
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: white;
+    background-color: rgb(230, 222, 253);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
@@ -39,27 +50,38 @@ body.wrong {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
-    margin: 20px 0;
+    margin: 30px 0;
 
 }
 
 .btn {
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue),100%, 30%);
+    border: 5px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     outline: none;
 }
 
 .btn:hover {
     border-color: black;
+
 }
 .btn.correct{
-    -hue: var(--hue-correct);
+    --hue: var(--hue-correct);
+    color: black;
 }
 
 .btn.wrong {
     --hue: var(--hue-wrong);
+
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+
+
 }
