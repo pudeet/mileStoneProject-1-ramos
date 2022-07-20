@@ -7,8 +7,11 @@
     --hue-wrong: 0;
     --hue-correct: 145; 
 }
+
+
 body {
     --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 20%);
     padding: 0;
     margin: 0;
     display:flex;
@@ -16,17 +19,16 @@ body {
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
 }
 
-body {
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg);
+img {
+    position: absolute;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-img {
-    border: black solid 1px;
     border-radius: 50px;
 }
 
@@ -37,6 +39,7 @@ body.correct {
 body.wrong {
     --hue: var(--hue-wrong);
 }
+
 .container {
     width: 800px;
     max-width: 80%;
@@ -84,4 +87,8 @@ body.wrong {
     padding: 10px 20px;
 
 
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/39/d4/73/39d473c0f8b7b8c42e02ccc9253a7b50.gif);
 }
