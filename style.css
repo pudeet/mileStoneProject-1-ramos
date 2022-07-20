@@ -73,11 +73,12 @@ body.wrong {
 }
 .btn.correct{
     --hue: var(--hue-correct);
-    color: black;
+
 }
 
 .btn.wrong {
     --hue: var(--hue-wrong);
+    color: black;
 
 }
 
@@ -88,6 +89,16 @@ body.wrong {
 
 
 }
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
 
 body {
     background-image: url(https://i.pinimg.com/originals/39/d4/73/39d473c0f8b7b8c42e02ccc9253a7b50.gif);
