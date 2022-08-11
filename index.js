@@ -1,18 +1,28 @@
-
+//the declaration of the variables that we will plug into our later equations//
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const scoreText =document.getElementById('scoreboard')
+
+const score= 0
+
+function increseScore(number){
+  score += number
+  scoreText.innerText = score 
+}
+
+
 
 let shuffledQuestions, currentQuestionIndex
-
+// function of the start button and shuffle//
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
+// hides the start button and then shuffles the questions //
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -20,12 +30,12 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
-
+// function of the next button//
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
-
+//showing of the question//
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -39,7 +49,7 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
+// reset button function// 
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -62,8 +72,10 @@ function selectAnswer(e) {
     startButton.classList.remove('hide')
   }
 }
+//the right and wrong functions of the quiz//
 
-function setStatusClass(element, correct) {
+
+function setStatusClass(element, correct)  {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
@@ -76,7 +88,7 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
+//the questions that will appear, the source for this is https://www.youtube.com/watch?v=riDzcEQbX6k&t=936s//
 const questions = [
   {
     question: 'What game franchise is known for this line? "its dangerous to go alone take this"',

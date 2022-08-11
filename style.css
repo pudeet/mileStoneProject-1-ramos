@@ -107,7 +107,7 @@ body {
     background-image: url(https://i.pinimg.com/originals/39/d4/73/39d473c0f8b7b8c42e02ccc9253a7b50.gif);
 }
 
-.score {
+#scoreboard {
     position: fixed;
     top: 170px;
     left:395px;
