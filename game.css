@@ -1,0 +1,30 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5 rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(red, green, blue);
+    background-color:rgb(59, 29, 148);
+}
+.choice-container:hover {
+    cursor: pointer;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 185, 251);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(230, 222, 253);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: aqua;
+    color: antiquewhite;
+
+}
+choice-text {
+    padding: 1.5rem;
+}
