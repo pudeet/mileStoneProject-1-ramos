@@ -19,9 +19,13 @@ h4 {
 }
 
 h1{
-    font-size: 5.4rem;
-    color:rgb(233, 198, 0);
+    -webkit-text-stroke: 2.5px rgb(113, 43, 0);
+    font-size: 8.2rem;
+    color:rgb(190, 106, 2);
     margin-bottom: 5rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 6px rgb(37, 28, 0);
+    
 }
 h1 > span {
     font-size: 2.4rem;
@@ -41,13 +45,23 @@ h3{
 /*utilities*/
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 900px;
+    height: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
-    margin:0 auto;
+    max-width: 2000rem;
+    margin: 0;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01073865290819.5d61d475f0072.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 .container > * {
@@ -87,7 +101,7 @@ h3{
 }
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 185, 251);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(67, 62, 2);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 
@@ -98,7 +112,8 @@ h3{
     box-shadow: none;
     transform:none;
 }
-
-
-
+html {
+    background: url(https://i.pinimg.com/originals/39/d4/73/39d473c0f8b7b8c42e02ccc9253a7b50.gif);
+    background-repeat: repeat;
+}
 /*end of first page styling*/
