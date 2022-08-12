@@ -2,6 +2,7 @@
     background-color:rgb(43, 8, 120);
     font-size:62.5%;
 }
+
 *{
     box-sizing: border-box;
     font-family: Arial, Arial, Helvetica, sans-serif;
@@ -97,5 +98,7 @@ h3{
     box-shadow: none;
     transform:none;
 }
+
+
 
 /*end of first page styling*/
