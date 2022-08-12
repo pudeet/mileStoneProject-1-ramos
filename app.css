@@ -32,10 +32,11 @@ h1 > span {
     font-weight: 500rem;
 }
 h2 {
-    
+    -webkit-text-stroke: .5px rgb(113, 43, 0);
     font-size: 4.2rem;
     margin-bottom: 4rem;
     font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 h3{
@@ -66,7 +67,7 @@ h3{
 
 }
 .container > * {
-    width: 100%;
+    width: 90%;
 
 }
 
