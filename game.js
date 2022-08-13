@@ -65,6 +65,7 @@ startGame = () => {
 
 getNewQuestion = () => {
     if(avalibleQuestions.length === 0 || questions >= MAX_QUESTIONS){
+        localStorage.setItem("mostRecentScore", score);
         return window.location.assign("/end.html");
     }
     questionCounter++ ;
@@ -99,7 +100,7 @@ choices.forEach(choice => {
             incrementScore(CORRECT_BONUS);
          }
 
-         
+
 
         selectedChoice.parentElement.classList.add(classToApply);
 

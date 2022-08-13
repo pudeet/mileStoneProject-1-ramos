@@ -20,7 +20,7 @@ h4 {
 
 h1{
     -webkit-text-stroke: 2.5px rgb(113, 43, 0);
-    font-size: 8.2rem;
+    font-size: 7.2rem;
     color:rgb(207, 131, 37);
     margin-bottom: 5rem; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -120,3 +120,11 @@ html {
     background-repeat: repeat;
 }
 /*end of first page styling*/
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
